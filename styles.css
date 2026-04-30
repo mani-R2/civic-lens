@@ -55,6 +55,19 @@ body.dark-mode {
 }
 
 /* ///ADD/// Skip Link Styles */
+#skip {
+  position: absolute;
+  left: -9999px;
+}
+
+#skip:focus {
+  top: 10px;
+  left: 10px;
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+  padding: 0.5rem;
+  z-index: 1000;
+}
 
 /* ///ADD/// Navigation Styles */
 
