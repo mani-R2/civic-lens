@@ -63,14 +63,44 @@ body.dark-mode {
 #skip:focus {
   top: 10px;
   left: 10px;
-  background-color: var(--blue-bulletin);
+  background-color: var(--news-flash);
   color: var(--watchdog-white);
   padding: 0.5rem;
   z-index: 1000;
 }
 
 /* ///ADD/// Navigation Styles */
+header{
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+  padding: 2rem 1rem;
+  box-shadow: var(--shadow);
+  position: relative;
+}
 
+nav ul {
+  list-style: none;
+}
+
+.menu {
+  display: none;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.menu a {
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+#menu-toggle:checked + .menu-button + .menu {
+  display: flex;
+  flex-direction: column;
+}
 /* ///ADD/// Global Layout Styles */
 
 /* ///ADD/// Global Text Styles */
