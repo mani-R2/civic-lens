@@ -127,15 +127,26 @@ section {
 
 #featured-articles {
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 #featured-articles h3 {
   background-color: var(--watchdog-white);
   color: var(--truth-text);
   padding: 1rem;
+  margin: 0;
   box-shadow: var(--shadow);
 }
+
+#featured-articles h3 + p {
+  background-color: var(--watchdog-white);
+  color: var(--truth-text);
+  padding: 0 1rem 1rem 1rem;
+  margin: 0;
+  box-shadow: var(--shadow);
+}
+
+
 
 form {
   display: flex;
@@ -182,6 +193,14 @@ footer ul {
   justify-content: center;
   gap: 1rem;
 }
+
+footer a {
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
 /* ///ADD/// Global Text Styles */
 
 
